@@ -1,0 +1,31 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="DevByDave's personal portfolio website" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-custom-bg-light dark:bg-custom-bg-dark text-custom-text-light dark:text-custom-text-dark min-h-screen flex flex-col">
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <footer class="bg-custom-primary-light dark:bg-custom-primary-dark py-2 text-center text-sm">
+      <div class="container mx-auto">
+        <a href="https://twitter.com/davidmoremad" target="_blank" rel="noopener noreferrer" class="text-custom-accent-light dark:text-custom-accent-dark hover:text-custom-text-light dark:hover:text-custom-text-dark mx-2">Twitter</a>
+        <a href="https://github.com/davidmoremad" target="_blank" rel="noopener noreferrer" class="text-custom-accent-light dark:text-custom-accent-dark hover:text-custom-text-light dark:hover:text-custom-text-dark mx-2">GitHub</a>
+        <a href="https://linkedin.com/in/davidmoremad" target="_blank" rel="noopener noreferrer" class="text-custom-accent-light dark:text-custom-accent-dark hover:text-custom-text-light dark:hover:text-custom-text-dark mx-2">LinkedIn</a>
+      </div>
+    </footer>
+  </body>
+</html>

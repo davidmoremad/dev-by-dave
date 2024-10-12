@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects } from '../data/projects';
+---
+
+<Layout title="DevByDave">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-5xl font-thin text-gray-600 text-center mb-12 text-black dark:text-custom-text-dark mt-10 mb-20">
+      <span class="font-extrabold text-black">Dev</span>By<span class="font-extrabold text-black">Dave</span>
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projects.map((project) => (
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          url={project.url}
+          image={project.image}
+        />
+      ))}
+    </div>
+  </main>
+</Layout>
