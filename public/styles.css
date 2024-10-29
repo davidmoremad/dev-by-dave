@@ -1,0 +1,14 @@
+/* Import montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
+
+header h1{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -3px;
+}
+
+/* Remove whitespaces in Title */
+header h1 span{
+  display: inline-block;
+  margin-right: -0.2em;
+}
+

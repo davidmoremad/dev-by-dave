@@ -9,10 +9,12 @@ interface Props {
 const { href, title, subtitle, image } = Astro.props;
 ---
 
-<a href={href} target="_blank" class="block bg-gray-100 dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
-  <img src={image} alt={title} class="w-full h-40 object-cover" />
-  <div class="p-6">
-    <h2 class="text-3xl font-bold mb-2 dark:text-white">{title}</h2>
+<a href={href} class="block bg-light-surface dark:bg-dark-surface rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
+  <img src={image} alt={title} class="w-full h-40 object-cover" style="object-position: top;"/>
+  
+  <!-- <div class="p-6">
+    <h2 class="text-3xl font-bold mb-2 text-primary dark:text-secondary">{title}</h2>
     <p class="text-gray-700 dark:text-gray-300">{subtitle}</p>
-  </div>
+  </div> -->
+
 </a>
