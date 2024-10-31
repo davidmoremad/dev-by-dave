@@ -1,5 +1,11 @@
 export const links = [
   {
+    title: "Quien lo dijo",
+    subtitle: "Adivina quién dijo esta cita famosa",
+    image: "/whosaidthat.png",
+    url: "https://who-said-that.vercel.app/"
+  },
+  {
     title: "SpotyFav",
     subtitle: "Descarga tus canciones favoritas de Spotify",
     image: "/spotyfav.png",
